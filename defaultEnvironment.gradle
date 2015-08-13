@@ -15,7 +15,10 @@ subprojects {
 	"http://10.111.0.15:8081/artifactory/libs-snapshot"  	
 	"http://10.111.0.15:8081/artifactory/plugins-release"  	
 	"http://10.111.0.15:8081/artifactory/plugins-snapshot"  	
-  }
+	maven{
+		url "https://repository.cloudera.com/artifactory/cloudera-repos/"
+	}
+}
 
   project.buildDir = new File(project.rootProject.buildDir, project.name)
 }
