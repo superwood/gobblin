@@ -26,7 +26,7 @@ apply from: environmentScript
 
 if (!project.hasProperty('hadoopVersion')) {
   if (project.hasProperty('useHadoop2')) {
-    hadoopVersion = '2.3.0'
+    hadoopVersion = '2.3.0-cdh5.1.0'
   } else {
     hadoopVersion = '1.2.1'
   }

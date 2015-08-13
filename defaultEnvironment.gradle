@@ -11,6 +11,10 @@
 subprojects {
   repositories {
     mavenCentral()
+	"http://10.111.0.15:8081/artifactory/libs-release"  	
+	"http://10.111.0.15:8081/artifactory/libs-snapshot"  	
+	"http://10.111.0.15:8081/artifactory/plugins-release"  	
+	"http://10.111.0.15:8081/artifactory/plugins-snapshot"  	
   }
 
   project.buildDir = new File(project.rootProject.buildDir, project.name)
